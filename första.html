@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Väderapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="Weatherinfo" id="Weatherinfo">
+            <h2>Land/Stad</h2>
+            <input type="text" class="placeholder" id="Cityinput" placeholder="Stad">
+            <button class="button1" id="button1" type="submit">Hämta</button>
+        </form>
+
+        <div class="weather" id="weather">
+            <h1>Dagens Temperatur</h1>
+            <h1 id="localStorage"></h1>
+            <h2>Mina Favoriter:</h2>
+            <ul id="Lista"></ul>
+            <div class="city-container">
+                <h3 id="city"></h3>
+                <button class="favorite-btn" id="favoriteBtn">
+                    ❤️ 
+                </button>
+            </div>
+            <p><span class="Temperatur" id="Temperature">Temperatur: --</span></p>
+            <button type="btn" class="btn" id="detailsBtn">Mer info</button>
+            <div id="detailsWrapper" class="Temp">
+                <p><span class="Vind" id="Vind">Vindhastighet: --</span></p>
+                <p><span class="Datum" id="Datum">Datum: --</span></p>
+                <p><span class="Fuktighet" id="Fuktighet">Fuktighet: --</span></p>
+                <p><span class="Emoji" id="Emoji">Emoji: --</span></p>
+            </div>
+        </div>
+        <div class="dagar-container" id="dagar">
+            <div class="dag">
+                <p><span class="Namn" id="Måndag"></span></p>
+                <div class="Temperature" id="Temp-Måndag"></div>
+                <div class="Emoji" id="Emoji-Måndag"></div>
+                <div class="Beskrivning" id="info-Måndag"></div>
+            </div>
+            <div class="dag">
+                <p><span class="Namn" id="Tisdag"></span></p>
+                <div class="Temperature" id="Temp-Tisdag"></div>
+                <div class="Emoji" id="Emoji-Tisdag"></div>
+                <div class="Beskrivning" id="info-Tisdag"></div>
+            </div>
+            <div class="dag">
+                <p><span class="Namn" id="Onsdag"></span></p>
+                <div class="Temperature" id="Temp-Onsdag"></div>
+                <div class="Emoji" id="Emoji-Onsdag"></div>
+                <div class="Beskrivning" id="info-Onsdag"></div>
+            </div>
+            <div class="dag">
+                <p><span class="Namn" id="Torsdag"></span></p>
+                <div class="Temperature" id="Temp-Torsdag"></div>
+                <div class="Emoji" id="Emoji-Torsdag"></div>
+                <div class="Beskrivning" id="info-Torsdag"></div>
+            </div>
+            <div class="dag">
+                <p><span class="Namn" id="Fredag"></span></p>
+                <div class="Temperature" id="Temp-Fredag"></div>
+                <div class="Emoji" id="Emoji-Fredag"></div>
+            </div>
+            <div class="Beskrivning" id="info-Fredag"></div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <button class="button2" id="button2">Om</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

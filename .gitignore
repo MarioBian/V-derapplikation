@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Loggfiler
+*.log
+
+# Visual Studio Code-specifika filer
+.vscode/
+*.code-workspace
+
+# Miljöfiler
+.env
+
+# Kompilerade filer
+*.class
+*.o
+
+# Cache-filer
+.cache/
+
+# Särskilda filer för testning eller debugging
+test/
+coverage/

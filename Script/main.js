@@ -1,10 +1,10 @@
 window.onload = () => {
     document.getElementById("button2")?.addEventListener("click", () => {
-        window.location.href = "andra.html";
+        window.location.href = "second.html";
     });
 
     document.getElementById("backa")?.addEventListener("click", () => {
-        window.location.href = "första.html";
+        window.location.href = "first.html";
     });
 
     const button = document.getElementById("button1");
